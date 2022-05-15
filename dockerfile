@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . .
 
 
-RUN apt update && apt-get install libgeos-dev
+RUN apt update && apt-get install -y libgeos-dev
 RUN pip3 install -r requirements.txt
 RUN ./setup.sh
 
